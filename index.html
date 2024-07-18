@@ -1,44 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness</title>
 
     <!---------- CSS links ---------->
-     <link rel="stylesheet" href="styles/style.css">
-     <link rel="stylesheet" href="styles/responsive.css">
-     <script src="https://kit.fontawesome.com/9e9f20c427.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/9e9f20c427.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!--------------- HEADER SECTION --------------->
     <header>
-        <!----- Navigation Bar Start----->
-        <div class="navbar d-flex container">
-            <!----- Logo ----->
-            <h1 class="logo"><em>Fitness</em></h1>
-            <!----- Menu ----->
-            <ul class="menu d-flex">
-                <li class="menu-item active-link">
-                    <a href="#">Home</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">Service</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">Contact</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">About</a>
-                </li>
-            </ul>
-            <div class="hamburger-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+      <!----- Navigation Bar Start----->
+      <div class="navbar d-flex container">
+        <!----- Logo ----->
+        <h1 class="logo"><em>Fitness</em></h1>
+        <!----- Menu ----->
+        <ul class="menu d-flex d-hide-sm">
+          <li class="menu-item active-link">
+            <a href="#">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Service</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">About</a>
+          </li>
+        </ul>
+        <div class="hamburger-menu">
+          <i class="fa-solid fa-bars"></i>
         </div>
+      </div>
+      <!----- Navigation Bar End----->
+
+      <!----- Banner Start----->
+      <div id="banner" class="container d-flex">
+        <div class="banner-desc d-flex flex-col">
+          <div class="banner-title d-flex flex-col">
+            <h2>Get body in <span class="miama">shape</span> & stay healthy</h2>
+            <p class="para">
+              A huge selection of health and fitness content, healthy recipes
+              and transformation stories to help you get fit and stay fit!
+            </p>
+          </div>
+          <!----- Buttons----->
+          <div class="banner-btns d-flex">
+            <div class="btn-container">
+              <button class="primary-btn">
+                Join <span class="d-hide-sm">Club</span> Now!
+              </button>
+            </div>
+            <div class="btn-container">
+              <button class="secondary-btn">Download App</button>
+            </div>
+          </div>
+        </div>
+        <div class="banner-img-cards">
+          <div class="img-container">
+            <img src="images/Images 2.png" alt="" />
+          </div>
+          <div id="yt-link-card" class="banner-cards d-flex">
+            <a
+              class="circle d-flex flex-col"
+              href="https://www.youtube.com/watch?v=cbKkB3POqaY"
+            >
+              <i class="fa-solid fa-play"></i>
+            </a>
+            <div>
+              <h4>350+</h4>
+              <p class="para">Video tutorial</p>
+            </div>
+          </div>
+          <div id="norm-card" class="banner-cards">
+            <h4>500+</h4>
+            <p class="para">Free Workout Videos</p>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
-</body>
+  </body>
 </html>

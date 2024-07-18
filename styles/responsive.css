@@ -6,14 +6,80 @@
     width: 90%;
   }
 
-  /*==========---------- HEADER ----------==========*/
-  /*========== Navigation Bar ==========*/
-  .navbar .menu {
+  .d-hide-sm {
     display: none;
   }
 
+  .para {
+    font-size: 0.8rem;
+  }
+
+  /*========== Buttons ==========*/
+  .primary-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.875rem;
+  }
+
+  .secondary-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.2rem;
+  }
+
+  /*==========---------- HEADER ----------==========*/
+  /*========== Navigation Bar ==========*/
   .hamburger-menu {
     display: block;
+  }
+
+  /*========== Banner ==========*/
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner .banner-desc .banner-title {
+    width: 80%;
+  }
+
+  #banner .banner-desc h2 {
+    font-size: 2.25rem;
+  }
+
+  .banner-img-cards .img-container {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .banner-img-cards img {
+    width: 100%;
+  }
+
+  .banner-cards {
+    padding: 0.75rem;
+  }
+
+  .banner-cards h4 {
+    font-size: 1.2rem;
+  }
+
+  .banner-cards p {
+    font-size: 0.6rem;
+  }
+
+  .circle {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 0.5rem;
+  }
+
+  #yt-link-card {
+    bottom: 12rem;
+    left: 1rem;
+  }
+
+  #norm-card {
+    position: absolute;
+    bottom: 22rem;
+    left: 10rem;
   }
 
 }
@@ -33,14 +99,85 @@
 
   /*==========---------- HEADER ----------==========*/
   /*========== Navigation Bar ==========*/
-  .navbar .menu {  
+  .navbar .menu {
     gap: 1.25rem;
-}
+  }
+
+  /*========== Banner ==========*/
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner .banner-desc .banner-title {
+    width: 80%;
+  }
+
+  #banner .banner-desc h2 {
+    font-size: 4.875rem;
+  }
+
+  .banner-img-cards .img-container {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .banner-cards h4 {
+    font-size: 1.5rem;
+  }
+
+  .banner-cards p {
+    font-size: 0.8rem;
+  }
+
+  .circle {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  #yt-link-card {
+    bottom: 10rem;
+    left: 8rem;
+  }
+
+  #norm-card {
+    position: absolute;
+    bottom: 27rem;
+    left: 24rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /* CSS rules for large devices */
+
+  /*==========---------- HEADER ----------==========*/
+  /*========== Banner ==========*/
+  #banner .banner-desc h2 {
+    font-size: 3.6rem;
+    font-weight: 900;
+  }
+
+  .banner-cards {
+    padding: 1rem;
+  }
+
+  .banner-cards h4 {
+    font-size: 1.8rem;
+  }
+  .banner-cards p {
+    font-size: 0.8rem;
+  }
+
+  #yt-link-card {
+    position: absolute;
+    bottom: 4rem;
+    left: 1rem;
+  }
+
+  #norm-card {
+    position: absolute;
+    bottom: 20rem;
+    left: 10rem;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

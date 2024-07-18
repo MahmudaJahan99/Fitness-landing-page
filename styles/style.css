@@ -18,6 +18,12 @@
 
 body {
     font-family: "Inter", sans-serif;
+    background: var(--bg-primary);
+}
+
+.para {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
 }
 
 .container {
@@ -29,6 +35,13 @@ body {
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
 .active-link {
     font-weight: 600;
     border-radius: 2.875rem;
@@ -36,10 +49,38 @@ body {
     padding: 0.5rem 1.25rem;
 }
 
+.miama {
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+}
+
+/*========== Buttons ==========*/
+.primary-btn {
+    color: var(--primary-text-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 1rem 2.5rem;
+    border: none;
+}
+
+.secondary-btn {
+    color: var(--primary-text-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 42px;
+    background: transparent;
+    padding: 1rem 2.5rem;
+    border: 1px solid rgb(255, 255, 255);
+}
+
 /*========== Colors ==========*/
 :root {
-    --primary-text: rgb(255, 255, 255);
-    --secondary-text: rgba(255, 255, 255, 0.5);
+    --bg-primary: rgb(17, 17, 17);
+    --primary-text-color: rgb(255, 255, 255);
+    --secondary-text-color: rgba(255, 255, 255, 0.5);
+
 }
 
 /*========== Logo ==========*/
@@ -50,10 +91,9 @@ body {
 }
 
 
-
 /*==========---------- HEADER ----------==========*/
 header {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    color: var(--primary-text-color);
 }
 
 /*========== Navigation Bar ==========*/
@@ -64,7 +104,7 @@ header {
 
 .navbar .menu {
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
     gap: 3rem;
 }
 
@@ -74,11 +114,73 @@ header {
 
 .navbar .menu li a {
     text-decoration: none;
-    color: var(--primary-text);
+    color: var(--primary-text-);
     font-size: 1.125rem;
 }
 
 .hamburger-menu {
-    color: var(--primary-text);
     display: none;
+}
+
+/*========== Banner ==========*/
+#banner {
+    justify-content: space-between;
+}
+#banner .banner-desc {
+    align-items: flex-start;
+}
+
+#banner .banner-desc .banner-title {
+    width: 70%;
+}
+
+#banner .banner-desc h2 {
+    font-size: 4.875rem;
+    font-weight: 900;
+}
+
+.banner-btns {
+    gap: 1rem;
+}
+
+.banner-img-cards {
+    position: relative;
+}
+
+.banner-cards {
+    width: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(20px);
+    padding: 1.25rem;
+    align-items: center;
+}
+
+.banner-cards h4 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    align-items: center;
+}
+
+#yt-link-card {
+    position: absolute;
+    bottom: 3rem;
+    left: -5rem;
+}
+
+#norm-card {
+    position: absolute;
+    bottom: 19rem;
+    left: 9.3rem;
 }
