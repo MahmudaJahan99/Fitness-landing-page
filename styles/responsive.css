@@ -6,6 +6,15 @@
     width: 90%;
   }
 
+  .section-desc {
+    width: 100%;
+    gap: 0.875rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
   .d-hide-sm {
     display: none;
   }
@@ -44,24 +53,24 @@
     font-size: 2.25rem;
   }
 
-  .banner-img-cards .img-container {
+  .banner-img-boxes .img-container {
     width: fit-content;
     margin: auto;
   }
 
-  .banner-img-cards img {
+  .banner-img-boxes img {
     width: 100%;
   }
 
-  .banner-cards {
+  .banner-boxes {
     padding: 0.75rem;
   }
 
-  .banner-cards h4 {
+  .banner-boxes h4 {
     font-size: 1.2rem;
   }
 
-  .banner-cards p {
+  .banner-boxes p {
     font-size: 0.6rem;
   }
 
@@ -71,17 +80,61 @@
     margin-right: 0.5rem;
   }
 
-  #yt-link-card {
+  #yt-link-box {
     bottom: 12rem;
     left: 1rem;
   }
 
-  #norm-card {
+  #norm-box {
     position: absolute;
     bottom: 22rem;
     left: 10rem;
   }
 
+  /*========== Change Habits ==========*/
+  #habits .habits-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #habits .habits-cards-container .habits-cards {
+    margin-bottom: 2rem;
+  }
+
+  #habits .habits-cards-container .habits-cards .cards-desc {
+    width: 80%;
+  }
+
+  /*========== Run Extra ==========*/
+  #run-extra {
+    flex-direction: column;
+    gap: 0.875rem;
+    padding: 1.5rem;
+  }
+
+  #run-extra .btn-container {
+    width: 100%;
+  }
+
+  #run-extra .btn-container .primary-btn {
+    width: 100%;
+  }
+
+  /*========== Trainings & Exercises Start ==========*/
+  /* Applies on all */
+  .training-para1,
+  .training-para2 {
+    font-size: 0.6rem;
+  }
+
+  /* Row 1 */
+  #training .img-collage .row-1 {
+    grid-template-columns: 45% 55%;
+  }
+
+  /* Row 2 */
+  #training .img-collage .row-2 {
+    grid-template-columns: 55% 45%;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -95,6 +148,14 @@
   /*==========---------- GLOBAL ----------==========*/
   .container {
     width: 90%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .d-hide-md {
+    display: none;
   }
 
   /*==========---------- HEADER ----------==========*/
@@ -116,16 +177,16 @@
     font-size: 4.875rem;
   }
 
-  .banner-img-cards .img-container {
+  .banner-img-boxes .img-container {
     width: fit-content;
     margin: auto;
   }
 
-  .banner-cards h4 {
+  .banner-boxes h4 {
     font-size: 1.5rem;
   }
 
-  .banner-cards p {
+  .banner-boxes p {
     font-size: 0.8rem;
   }
 
@@ -134,20 +195,53 @@
     width: 2.5rem;
   }
 
-  #yt-link-card {
+  #yt-link-box {
     bottom: 10rem;
     left: 8rem;
   }
 
-  #norm-card {
+  #norm-box {
     position: absolute;
     bottom: 27rem;
     left: 24rem;
+  }
+
+  /*========== Change Habits ==========*/
+  #habits .habits-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #habits .habits-cards-container .habits-cards {
+    margin-bottom: 2rem;
+  }
+
+  #habits .habits-cards-container .habits-cards .cards-desc {
+    width: 80%;
+  }
+
+  /*========== Run Extra ==========*/
+  #run-extra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  /*========== Trainings & Exercises Start ==========*/
+  /* Applies on all */
+  .training-para1,
+  .training-para2 {
+    font-size: 0.8rem;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /*==========---------- GLOBAL ----------==========*/
+  .container {
+    width: 85%;
+  }
 
   /*==========---------- HEADER ----------==========*/
   /*========== Banner ==========*/
@@ -156,27 +250,53 @@
     font-weight: 900;
   }
 
-  .banner-cards {
+  .banner-boxes {
     padding: 1rem;
   }
 
-  .banner-cards h4 {
+  .banner-boxes h4 {
     font-size: 1.8rem;
   }
-  .banner-cards p {
+
+  .banner-boxes p {
     font-size: 0.8rem;
   }
 
-  #yt-link-card {
+  #yt-link-box {
     position: absolute;
     bottom: 4rem;
     left: 1rem;
   }
 
-  #norm-card {
+  #norm-box {
     position: absolute;
     bottom: 20rem;
     left: 10rem;
+  }
+
+  /*========== Change Habits ==========*/
+  #habits .habits-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+
+  /*========== Run Extra ==========*/
+  #run-extra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  /*========== Trainings & Exercises Start ==========*/
+  /* Applies on all */
+  .bg-img-css {
+    min-height: 45vh;
+  }
+
+  .training-para1,
+  .training-para2 {
+    font-size: 0.8rem;
   }
 }
 

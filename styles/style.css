@@ -16,9 +16,32 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-primary: rgb(17, 17, 17);
+    --primary-text-color: rgb(255, 255, 255);
+    --secondary-text-color: rgba(255, 255, 255, 0.5);
+
+}
+
 body {
     font-family: "Inter", sans-serif;
     background: var(--bg-primary);
+    color: var(--primary-text-color);
+}
+
+.section-desc {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 .para {
@@ -33,6 +56,11 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+.mtb-50 {
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
 }
 
 .flex-col {
@@ -75,14 +103,6 @@ body {
     border: 1px solid rgb(255, 255, 255);
 }
 
-/*========== Colors ==========*/
-:root {
-    --bg-primary: rgb(17, 17, 17);
-    --primary-text-color: rgb(255, 255, 255);
-    --secondary-text-color: rgba(255, 255, 255, 0.5);
-
-}
-
 /*========== Logo ==========*/
 .logo {
     color: rgb(230, 83, 60);
@@ -92,10 +112,6 @@ body {
 
 
 /*==========---------- HEADER ----------==========*/
-header {
-    color: var(--primary-text-color);
-}
-
 /*========== Navigation Bar ==========*/
 .navbar {
     justify-content: space-between;
@@ -114,7 +130,7 @@ header {
 
 .navbar .menu li a {
     text-decoration: none;
-    color: var(--primary-text-);
+    color: var(--primary-text-color);
     font-size: 1.125rem;
 }
 
@@ -126,6 +142,7 @@ header {
 #banner {
     justify-content: space-between;
 }
+
 #banner .banner-desc {
     align-items: flex-start;
 }
@@ -143,11 +160,11 @@ header {
     gap: 1rem;
 }
 
-.banner-img-cards {
+.banner-img-boxes {
     position: relative;
 }
 
-.banner-cards {
+.banner-boxes {
     width: fit-content;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -157,7 +174,7 @@ header {
     align-items: center;
 }
 
-.banner-cards h4 {
+.banner-boxes h4 {
     font-size: 2rem;
     font-weight: 900;
 }
@@ -173,14 +190,147 @@ header {
     align-items: center;
 }
 
-#yt-link-card {
+#yt-link-box {
     position: absolute;
     bottom: 3rem;
     left: -5rem;
 }
 
-#norm-card {
+#norm-box {
     position: absolute;
     bottom: 19rem;
     left: 9.3rem;
+}
+
+/*========== Change Habits ==========*/
+#habits .habits-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#habits .habits-cards-container .habits-cards .img-container img {
+    border-radius: 50%;
+}
+
+#habits .habits-cards-container .habits-cards {
+    gap: 0.5rem;
+}
+
+#habits .habits-cards-container .habits-cards .cards-desc {
+    text-align: center;
+}
+
+#habits .habits-cards-container .habits-cards .cards-desc h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+/*========== Run Extra ==========*/
+#run-extra {
+    gap: 5rem;
+    padding: 2rem;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+
+#run-extra .section-desc {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+}
+
+#run-extra .img-container img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/*========== Trainings & Exercises Start ==========*/
+#training .section-desc {
+    margin: 0;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Applies on all */
+.bg-img-css {
+    min-height: 35vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.65;
+}
+
+.training-para1 {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 70%;
+}
+
+.training-para2 {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    width: 70%;
+}
+
+/* Row 1 */
+#training .img-collage .row-1 {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+#training .img-collage .row1-img1 {
+    background-image: url(../images/exercise1.jpg);
+}
+
+#training .img-collage .row1-img1-container {
+    background: aquamarine;
+    position: relative;
+}
+#training .img-collage .row1-img2 {
+    background-image: url(../images/exercise2.png);
+}
+
+#training .img-collage .row1-img2-container {
+    background: red;
+    position: relative;
+}
+#training .img-collage .row1-img3 {
+    background-image: url(../images/exercise3.png);
+}
+
+#training .img-collage .row1-img3-container {
+    background: black;
+    position: relative;
+}
+
+/* Row 2 */
+#training .img-collage .row-2 {
+    display: grid;
+    grid-template-columns: 45% 25% 30%;
+}
+
+#training .img-collage .row2-img1 {
+    background-image: url(../images/exercise4.png);
+}
+
+#training .img-collage .row2-img1-container {
+    background: black;
+    position: relative;
+}
+#training .img-collage .row2-img2 {
+    background-image: url(../images/exercise5.jpg);
+}
+
+#training .img-collage .row2-img2-container {
+    background: green;
+    position: relative;
+}
+#training .img-collage .row2-img3 {
+    background-image: url(../images/exercise6.jpg);
+}
+
+#training .img-collage .row2-img3-container {
+    background: blue;
+    position: relative;
 }
