@@ -11,6 +11,11 @@
     gap: 0.875rem;
   }
 
+  .mtb-50 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .title {
     font-size: 2rem;
   }
@@ -135,6 +140,55 @@
   #training .img-collage .row-2 {
     grid-template-columns: 55% 45%;
   }
+
+
+  /*========== BMI Calculator Start ==========*/
+  #bmi .container {
+    flex-direction: column;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+  }
+
+  /* BMI Chart */
+  #bmi .container table {
+    width: 100%;
+  }
+
+  #bmi .container table th {
+    font-size: 1rem !important;
+  }
+
+  #bmi .container table,
+  #bmi .container table th,
+  #bmi .container table td {
+    font-size: 0.8rem;
+  }
+
+  #bmi .container table th,
+  #bmi .container table td {
+    padding: 0.8rem 2rem 1rem 1rem;
+  }
+
+  /* BMI form */
+  #bmi .container .bmi-form {
+    width: 100%;
+  }
+
+  /*========== Team Start ==========*/
+  #team .bg-img-css {
+    min-height: 5             0vh;
+  }
+
+  #team .team-member .member-desc {
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  #team .team-member {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -232,6 +286,16 @@
   .training-para1,
   .training-para2 {
     font-size: 0.8rem;
+  }
+
+  /*========== BMI Calculator Start ==========*/
+  #bmi .container {
+    flex-direction: column;
+  }
+
+  /* BMI form */
+  #bmi .container .bmi-form {
+    width: 100%;
   }
 }
 
