@@ -426,6 +426,8 @@ body {
 
 #team .team-member .bg-img-css {
     border-radius: 18px;
+    opacity: 0.8;
+    min-height: 40vh;
 }
 
 #team .team-member {
@@ -435,10 +437,6 @@ body {
     padding: 1rem;
     border-radius: 18px;
 }
-
-#team .bg-img-css {
-    min-height: 40vh;
-  }
 
 #team .team-member img {
     width: 100%;
@@ -473,4 +471,13 @@ body {
 #team .image-container .member6-img {
     background-image: url(../images/trainer6.png);
     background-position: center;
+}
+
+/*========== Footer ==========*/
+footer {
+    
+}
+footer .footer-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
