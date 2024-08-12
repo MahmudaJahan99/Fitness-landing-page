@@ -414,7 +414,7 @@ body {
 
 
 /*========== Team Start ==========*/
-#team .team-member .image-container{
+#team .team-member .image-container {
     position: relative;
 }
 
@@ -474,10 +474,45 @@ body {
 }
 
 /*========== Footer ==========*/
-footer {
-    
-}
 footer .footer-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 3.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .left-footer {
+    margin: 0;
+}
+
+footer .logo {
+    font-size: 4.375rem;
+    margin-bottom: 1.25rem;
+}
+
+footer .footer-contents .right-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer .footer-contents .comtact-links {
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+footer .footer-contents .comtact-links h5 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+footer .footer-contents .comtact-links a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.copyrights {
+    width: max-content;
+    padding: 3rem 0;
+    margin: auto;
 }

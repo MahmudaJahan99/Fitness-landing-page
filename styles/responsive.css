@@ -178,7 +178,7 @@
 
   /*========== Team Start ==========*/
   #team .bg-img-css {
-    min-height: 5             0vh;
+    min-height: 5 0vh;
   }
 
   #team .team-member .member-desc {
@@ -188,6 +188,38 @@
 
   #team .team-member {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*========== Footer ==========*/
+  footer .footer-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer .logo {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  footer .footer-contents .right-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer .footer-contents .comtact-links {
+    gap: 1rem;
+  }
+
+  footer .footer-contents .comtact-links h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .copyrights {
+    padding: 1.5rem 0;
+    margin: auto;
   }
 }
 
@@ -296,6 +328,40 @@
   /* BMI form */
   #bmi .container .bmi-form {
     width: 100%;
+  }
+
+  /*========== Footer ==========*/
+  footer .footer-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  footer .footer-contents .right-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .footer-contents .comtact-links {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  footer .footer-contents .comtact-links h5 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  footer .footer-contents .comtact-links a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+  }
+
+  .copyrights {
+    width: max-content;
+    padding: 3rem 0;
+    margin: auto;
   }
 }
 
