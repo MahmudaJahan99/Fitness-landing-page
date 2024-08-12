@@ -77,11 +77,6 @@ body {
     padding: 0.5rem 1.25rem;
 }
 
-.miama {
-    font-family: 'Miama', sans-serif;
-    font-weight: 400;
-}
-
 /*========== Buttons ==========*/
 .primary-btn {
     color: var(--primary-text-color);
@@ -114,6 +109,8 @@ body {
 /*==========---------- HEADER ----------==========*/
 /*========== Navigation Bar ==========*/
 .navbar {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -139,10 +136,6 @@ body {
 }
 
 /*========== Banner ==========*/
-#banner {
-    justify-content: space-between;
-}
-
 #banner .banner-desc {
     align-items: flex-start;
 }
@@ -154,6 +147,13 @@ body {
 #banner .banner-desc h2 {
     font-size: 4.875rem;
     font-weight: 900;
+    line-height: 120%;
+}
+
+#banner .banner-desc h2 .miama {
+    font-family: 'Miama', sans-serif;
+    font-size: 10rem;
+    font-weight: 400;
 }
 
 .banner-btns {
@@ -192,14 +192,14 @@ body {
 
 #yt-link-box {
     position: absolute;
-    bottom: 3rem;
-    left: -5rem;
+    bottom: 3em;
+    left: -5em;
 }
 
 #norm-box {
     position: absolute;
-    bottom: 19rem;
-    left: 9.3rem;
+    bottom: 19em;
+    left: 9.3em;
 }
 
 /*========== Change Habits ==========*/
