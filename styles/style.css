@@ -455,6 +455,11 @@ body {
     margin-right: 10px;
 }
 
+#pricing .card-contents .secondary-btn:hover {
+    background: rgb(230, 83, 60);
+    border: 1px solid transparent;
+}
+
 
 /*========== Team Start ==========*/
 #team .team-member .image-container {
