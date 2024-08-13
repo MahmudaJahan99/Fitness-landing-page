@@ -17,7 +17,7 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .d-hide-sm {
@@ -64,7 +64,7 @@
 
   #banner .banner-desc h2 .miama {
     font-size: 4.5rem;
-}
+  }
 
   .banner-img-boxes .img-container {
     width: fit-content;
@@ -141,12 +141,28 @@
 
   /* Row 1 */
   #training .img-collage .row-1 {
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
+  }
+
+  #training .img-collage .row1-img1 {
+    background-position: 30%;
+  }
+
+  #training .img-collage .row1-img2 {
+    background-position: 60%;
   }
 
   /* Row 2 */
   #training .img-collage .row-2 {
     grid-template-columns: 55% 45%;
+  }
+
+  #training .img-collage .row2-img1 {
+    background-position: 40%;
+  }
+
+  #training .img-collage .row2-img2 {
+    background-position: 55%;
   }
 
 
@@ -225,6 +241,10 @@
     margin-bottom: 0.5rem;
   }
 
+  footer .footer-contents .comtact-links a {
+    font-size: 1.2rem;
+  }
+
   .copyrights {
     padding: 1.5rem 0;
     margin: auto;
@@ -273,7 +293,7 @@
 
   #banner .banner-desc h2 .miama {
     font-size: 8.5rem;
-}
+  }
 
   .banner-img-boxes .img-container {
     width: fit-content;
@@ -385,6 +405,10 @@
     width: 85%;
   }
 
+  .title {
+    font-size: 2rem;
+  }
+
   /*==========---------- HEADER ----------==========*/
   /*========== Banner ==========*/
   #banner .banner-desc h2 {
@@ -394,7 +418,7 @@
 
   #banner .banner-desc h2 .miama {
     font-size: 7rem;
-}
+  }
 
   .banner-boxes {
     padding: 1rem;
@@ -477,7 +501,7 @@
 
   #banner .banner-desc h2 .miama {
     font-size: 10.5rem;
-}
+  }
 
   .banner-btns {
     gap: 3rem;
