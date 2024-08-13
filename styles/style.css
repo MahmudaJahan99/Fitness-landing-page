@@ -86,6 +86,7 @@ body {
     background: rgb(230, 83, 60);
     padding: 1rem 2.5rem;
     border: none;
+    cursor: pointer;
 }
 
 .secondary-btn {
@@ -96,6 +97,7 @@ body {
     background: transparent;
     padding: 1rem 2.5rem;
     border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 /*========== Logo ==========*/
@@ -411,6 +413,46 @@ body {
     color: var(--secondary-text-color);
     border: none;
 }
+
+/*========== Pricing ==========*/
+/* .card-item {
+    width: fit-content;
+} */
+
+.pricing-cards-container {
+    justify-content: space-between;
+}
+
+#pricing .card-contents {
+    padding: 3rem 4rem;
+}
+
+.price-card-title-mb {
+    margin-bottom: 10px;
+}
+
+#pricing .plan-name {
+    font-size: 1.25rem;
+}
+
+#pricing .plan-price {
+    font-size: 2.8rem;
+}
+
+#pricing ul {
+    list-style-type: none;
+    margin: 2.5rem 0;
+}
+
+#pricing ul li {
+    margin: 1rem 0;
+    color: var(--secondary-text-color);
+}
+
+#pricing ul li i {
+    margin-right: 10px;
+}
+
 
 
 /*========== Team Start ==========*/
