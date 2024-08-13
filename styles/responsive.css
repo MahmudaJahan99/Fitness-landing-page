@@ -200,6 +200,32 @@
     width: 100%;
   }
 
+  /*========== Pricing ==========*/
+  .pricing-cards-container {
+    display: block;
+  }
+
+  #pricing .card-contents {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #pricing .plan-name {
+    font-size: 1.25rem;
+  }
+
+  #pricing .plan-price {
+    font-size: 2.5rem;
+  }
+
+  #pricing ul {
+    margin: 2rem 0;
+  }
+
+  #pricing .btn-container .primary-btn {
+    width: 100%;
+  }
+
   /*========== Team Start ==========*/
   #team .bg-img-css {
     min-height: 5 0vh;
@@ -362,6 +388,25 @@
     width: 100%;
   }
 
+  /*========== Pricing ==========*/
+  .pricing-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  #pricing .card-contents {
+    padding: 1.5rem;
+  }
+
+  #pricing .plan-price {
+    font-size: 2.5rem;
+  }
+
+  #pricing ul li i {
+    margin-right: 5px;
+  }
+
   /*========== Footer ==========*/
   footer .footer-contents {
     display: flex;
@@ -467,6 +512,16 @@
   .training-para1,
   .training-para2 {
     font-size: 0.8rem;
+  }
+
+  /*========== Pricing ==========*/
+
+  #pricing .card-contents {
+    padding: 2rem;
+  }
+
+  #pricing ul li i {
+    margin-right: 8px;
   }
 }
 

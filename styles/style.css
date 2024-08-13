@@ -415,12 +415,14 @@ body {
 }
 
 /*========== Pricing ==========*/
-/* .card-item {
-    width: fit-content;
-} */
-
 .pricing-cards-container {
-    justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+}
+
+.card-item {
+    border-radius: 18px;
 }
 
 #pricing .card-contents {
@@ -452,7 +454,6 @@ body {
 #pricing ul li i {
     margin-right: 10px;
 }
-
 
 
 /*========== Team Start ==========*/
